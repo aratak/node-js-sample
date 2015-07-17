@@ -20,3 +20,36 @@ tests:
   cmd: 'echo "........"'
   env:
     - NODE_ENV=production
+
+tests_only:
+  only: cimon3
+  prepare:
+    - npm install
+  service: nodejs
+  folder: /app
+  cmd: 'echo "........"'
+  env:
+    - NODE_ENV=production
+
+tests_except:
+  except: cimon3
+  prepare:
+    - npm install
+  service: nodejs
+  folder: /app
+  cmd: 'echo "........"'
+  env:
+    - NODE_ENV=production
+
+tests_array:
+  only:
+    - cimon3
+    - cimon4
+    - cimon5
+  prepare:
+    - npm install
+  service: nodejs
+  folder: /app
+  cmd: 'echo "........"'
+  env:
+    - NODE_ENV=production
