@@ -16,7 +16,6 @@ staging:
 tests:
   prepare:
     - npm install
-    - smdhbfsdfnjdsv;
   service: nodejs
   folder: /app
   cmd: 'echo "........"'
