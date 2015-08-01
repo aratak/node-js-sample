@@ -18,6 +18,6 @@ tests:
     - npm install
   service: nodejs
   folder: /app
-  cmd: 'echo "........"'
+  cmd: 'echo ".....<strong style=\'color: red;\'>1</strong>..."'
   env:
     - NODE_ENV=production
