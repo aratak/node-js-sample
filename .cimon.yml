@@ -18,6 +18,6 @@ tests:
     - npm install
   service: nodejs
   folder: /app
-  cmd: 'echo "......\e[32m.\e[0m..<strong>1</strong>..."'
+  cmd: 'echo "...\e[32m..\e[0m.<strong>1</strong>..."'
   env:
     - NODE_ENV=production
