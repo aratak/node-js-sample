@@ -1,6 +1,8 @@
 services:
   nodejs:
     from: 'node:4.2.1'
+    cache:
+     - /app/node_modules
 
 staging:
   prepare:
