@@ -9,11 +9,11 @@ staging:
     - npm install
   service: nodejs
   folder: /app
-  port: 80
+  port: 3001
   cmd: npm start
   env:
     - NODE_ENV=production
-    - PORT=80
+    - PORT=3001
 
 tests:
   prepare:
