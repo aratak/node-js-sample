@@ -1,23 +1,23 @@
 services:
   nodejs:
-    from: 'node:0.12.2'
+    from: 'node:4.2.1'
 
 staging:
   prepare:
     - npm install
   service: nodejs
   folder: /app
-  port: 80
+  port: 3001
   cmd: npm start
   env:
     - NODE_ENV=production
-    - PORT=80
+    - PORT=3001
 
 tests:
   prepare:
     - npm install
   service: nodejs
   folder: /app
-  cmd: 'echo "........"'
+  cmd: 'echo "...\e[32m..\e[0m.<strong>1</strong>..."'
   env:
     - NODE_ENV=production
